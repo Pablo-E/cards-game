@@ -5,5 +5,7 @@ func main() {
 
 	cards.shuffle()
 
-	cards.print()
+	hand, _ := deal(cards, 5)
+
+	hand.print()
 }

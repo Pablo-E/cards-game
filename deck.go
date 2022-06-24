@@ -16,15 +16,15 @@ func newDeck() deck {
 	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
 
 	for _, suit := range cardSuits {
-		for i := 1; i <= 12; i++ {
+		for i := 1; i <= 13; i++ {
 			switch i {
 			case 1:
 				cards = append(cards, fmt.Sprintf("A of %v", suit))
-			case 10:
-				cards = append(cards, fmt.Sprintf("J of %v", suit))
 			case 11:
-				cards = append(cards, fmt.Sprintf("Q of %v", suit))
+				cards = append(cards, fmt.Sprintf("J of %v", suit))
 			case 12:
+				cards = append(cards, fmt.Sprintf("Q of %v", suit))
+			case 13:
 				cards = append(cards, fmt.Sprintf("K of %v", suit))
 			default:
 				cards = append(cards, fmt.Sprintf("%v of %v", i, suit))
